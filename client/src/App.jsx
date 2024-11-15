@@ -1,14 +1,15 @@
-
-import './App.css'
-import Review from './Review'
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Review from './Review';
 
 function App() {
-
   return (
-    <>
-      <Review/>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Review />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
